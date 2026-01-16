@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>My Gaming World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #fff;
+            background:
+              linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.9)),
+              url("images/game1.jpg") center/cover no-repeat fixed;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 32px;
+            background: #00f2ff;
+            color: #000;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 10%;
+            background: rgba(0,0,0,0.8);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .game-card {
+            background: linear-gradient(135deg, #1c1c1c, #0b0b0b);
+            border-radius: 18px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .game-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+        }
+
+        .game-card img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            margin: 10px 0 8px;
+            font-size: 20px;
+        }
+
+        .game-card p {
+            font-size: 14px;
+            opacity: 0.85;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div>
+        <h1>WELCOME TO MY GAMING WORLD 🎮</h1>
+        <p>Những tựa game mình chơi và yêu thích</p>
+        <a href="#games" class="btn">Explore</a>
+    </div>
+</header>
+
+<section id="games">
+    <h2>Favorite Games</h2>
+
+    <div class="game-list">
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Valorant_logo_-_pink_color_version.svg" alt="Valorant">
+            <h3>Valorant</h3>
+            <p>FPS chiến thuật 5v5 của Riot Games.</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/GTA_V_Logo.svg" alt="GTA V">
+            <h3>GTA V</h3>
+            <p>Game thế giới mở huyền thoại của Rockstar.</p>
+        </div>
+
+        <div class="game-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/League_of_Legends_2019_vector.svg" alt="League of Legends">
+            <h3>League of Legends</h3>
+            <p>MOBA nổi tiếng nhất thế giới.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 luck08-gif | Gaming Website
+</footer>
+
+</body>
+</html>
